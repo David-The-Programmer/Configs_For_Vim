@@ -6,6 +6,8 @@ set relativenumber
 
 " Limit size of tab to be 4 for proper indentation
 set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Highlight match brackets
 set showmatch

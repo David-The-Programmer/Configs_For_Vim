@@ -52,6 +52,10 @@ call plug#end()
 " Config for vim-json plugin
 " Disable conceal to stop weird behaviour when navigating in a json
 let g:vim_json_syntax_conceal = 0
+
+" Config for emmet-vim plugin
+" Remap the default <C-Y> emmet leader key to ,
+let g:user_emmet_leader_key=','
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

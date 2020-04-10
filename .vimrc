@@ -67,6 +67,19 @@ let g:vim_json_syntax_conceal = 0
 " Config for emmet-vim plugin
 " Remap the default <C-Y> emmet leader key to ,
 let g:user_emmet_leader_key=','
+
+" Config for coc plugin
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-json', 
+  \ 'coc-html', 
+  \ 'coc-css', 
+  \ ]
+"  \ 'coc-eslint', 
+"  \ 'coc-prettier', 
+"  Add above later...
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

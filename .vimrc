@@ -80,6 +80,8 @@ let g:coc_global_extensions = [
 "  \ 'coc-eslint', 
 "  \ 'coc-prettier', 
 "  Add above later...
+"  Set the updatetime to be lower to trigger coc faster
+set updatetime=300
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

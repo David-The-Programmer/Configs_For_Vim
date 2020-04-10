@@ -45,6 +45,10 @@ Plug 'elzr/vim-json'
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
 " -----------------------------------------------------------------------
+" PLUGINS CONFIG
+" Config for vim-json plugin
+" Disable conceal to stop weird behaviour when navigating in a json
+let g:vim_json_syntax_conceal = 0
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

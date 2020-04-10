@@ -46,6 +46,9 @@ Plug 'elzr/vim-json'
 "Plugin for emmet abreviations
 Plug 'mattn/emmet-vim'
 
+"Plugin for vim surround
+Plug 'tpope/vim-surround'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

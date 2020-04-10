@@ -49,6 +49,9 @@ Plug 'mattn/emmet-vim'
 "Plugin for vim surround
 Plug 'tpope/vim-surround'
 
+"Plugin for replace with 
+Plug 'vim-scripts/ReplaceWithRegister'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

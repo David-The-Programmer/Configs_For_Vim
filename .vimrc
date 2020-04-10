@@ -35,6 +35,9 @@ Plug 'junegunn/vim-plug'
 "Get the oceanic next theme
 Plug 'mhartington/oceanic-next'
 
+"Plugin for JS Syntax
+Plug 'pangloss/vim-javascript'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

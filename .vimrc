@@ -38,6 +38,9 @@ Plug 'mhartington/oceanic-next'
 "Plugin for JS Syntax
 Plug 'pangloss/vim-javascript'
 
+"Plugin for JSON Syntax
+Plug 'elzr/vim-json'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

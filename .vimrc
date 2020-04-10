@@ -41,6 +41,9 @@ Plug 'pangloss/vim-javascript'
 "Plugin for JSON Syntax
 Plug 'elzr/vim-json'
 
+"Plugin for emmet abreviations
+Plug 'mattn/emmet-vim'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

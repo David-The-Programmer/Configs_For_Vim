@@ -49,8 +49,11 @@ Plug 'mattn/emmet-vim'
 "Plugin for vim surround
 Plug 'tpope/vim-surround'
 
-"Plugin for replace with 
+"Plugin for replace with register
 Plug 'vim-scripts/ReplaceWithRegister'
+
+"Plugin for Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 call plug#end()

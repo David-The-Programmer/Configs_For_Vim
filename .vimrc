@@ -1,4 +1,4 @@
-"Turning on the line numbers on the side
+" Turning on the line numbers on the side
 set number
 
 " Setting on the line numbers on the side to be relative
@@ -34,25 +34,26 @@ call plug#begin('~/.vim/plugged')
 " Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-plug'
 
-"Get the oceanic next theme
+" Get the oceanic next theme
 Plug 'mhartington/oceanic-next'
 
-"Plugin for JS Syntax
+" Plugin for JS Syntax
 Plug 'pangloss/vim-javascript'
 
-"Plugin for JSON Syntax
+" Plugin for JSON Syntax
 Plug 'elzr/vim-json'
 
-"Plugin for emmet abreviations
+" Plugin for emmet abreviations
 Plug 'mattn/emmet-vim'
 
-"Plugin for vim surround
+" Plugin for vim surround
 Plug 'tpope/vim-surround'
 
-"Plugin for replace with register
+" Plugin for replace with register
 Plug 'vim-scripts/ReplaceWithRegister'
 
-"Plugin for Intellisense
+" Plugin for Intellisense
+" NOTE! Plugin only really works with vim 8.2 and above
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system

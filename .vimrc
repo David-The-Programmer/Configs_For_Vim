@@ -83,6 +83,17 @@ let g:coc_global_extensions = [
 "  Add above later...
 "  Set the updatetime to be lower to trigger coc faster
 set updatetime=300
+
+" Use K to trigger tool tip documentation
+nnoremap <silent> K :call CocAction('doHover')<CR>
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use [`g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

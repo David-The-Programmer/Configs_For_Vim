@@ -67,6 +67,11 @@ Plug 'preservim/nerdtree'
 " Plugin to show git status flags in NERDTree file explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Plugin for dev icons with NERDTree
+" Need to make sure terminal is using nerd font(FiraMono Nerd Font)
+" Make sure nerd font is installed
+Plug 'ryanoasis/vim-devicons'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
@@ -114,17 +119,20 @@ autocmd vimenter * NERDTree
 " Config for NERDTree Git Plugin
 " Config for custom symbols
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"   : " M ",
-    \ "Staged"     : " S ",
-    \ "Untracked"  : " U ",
-    \ "Renamed"    : " R ",
-    \ "Unmerged"   : " ═ ",
-    \ "Deleted"    : " D ",
-    \ "Dirty"      : " · ",
-    \ "Clean"      : " ✔︎ ",
-    \ "Ignored"    : " I ",
-    \ "Unknown"    : " ? "
+    \ "Modified"   : "M",
+    \ "Staged"     : "S",
+    \ "Untracked"  : "U",
+    \ "Renamed"    : "R",
+    \ "Unmerged"   : "═",
+    \ "Deleted"    : "D",
+    \ "Dirty"      : "·",
+    \ "Clean"      : "✔︎",
+    \ "Ignored"    : "I",
+    \ "Unknown"    : "?"
     \ }
+
+" Config for dev icons plugin
+set encoding=UTF-8
 
 " -----------------------------------------------------------------------
 " THEME SECTION

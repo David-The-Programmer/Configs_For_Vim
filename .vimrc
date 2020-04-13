@@ -64,6 +64,9 @@ Plug 'junegunn/fzf.vim'
 " Plugin for displaying file system explorer
 Plug 'preservim/nerdtree'
 
+" Plugin to show git status flags in NERDTree file explorer
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
@@ -107,6 +110,21 @@ let NERDTreeShowHidden=1
 
 " Open NERDTree automatically when vim starts
 autocmd vimenter * NERDTree
+
+" Config for NERDTree Git Plugin
+" Config for custom symbols
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"   : " M ",
+    \ "Staged"     : " S ",
+    \ "Untracked"  : " U ",
+    \ "Renamed"    : " R ",
+    \ "Unmerged"   : " ═ ",
+    \ "Deleted"    : " D ",
+    \ "Dirty"      : " · ",
+    \ "Clean"      : " ✔︎ ",
+    \ "Ignored"    : " I ",
+    \ "Unknown"    : " ? "
+    \ }
 
 " -----------------------------------------------------------------------
 " THEME SECTION

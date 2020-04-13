@@ -67,16 +67,19 @@ Plug 'preservim/nerdtree'
 " Plugin to show git status flags in NERDTree file explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Plugin for dev icons with NERDTree
-" Need to make sure terminal is using nerd font(FiraMono Nerd Font)
-" Make sure nerd font is installed
-Plug 'ryanoasis/vim-devicons'
+" Plugin for syntax highlighting
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Plugin for git gutter
 Plug 'airblade/vim-gitgutter'
 
 " Plugin for vim-airline
 Plug 'vim-airline/vim-airline'
+
+" Plugin for dev icons with NERDTree
+" Need to make sure terminal is using nerd font(FiraMono Nerd Font)
+" Make sure nerd font is installed
+Plug 'ryanoasis/vim-devicons'
 
 " Initialize plugin system
 call plug#end()
@@ -150,6 +153,9 @@ set signcolumn=yes
 " Config for the vim airline plugin
 " Config for how file paths are displayed on tabs
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" Need this for airline status bar to display properly
+let g:airline_powerline_fonts = 1
 
 " OceanicNext theme for vim airline plugin
 let g:airline_theme = 'oceanicnext'

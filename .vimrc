@@ -72,6 +72,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Make sure nerd font is installed
 Plug 'ryanoasis/vim-devicons'
 
+" Plugin for git gutter
+Plug 'airblade/vim-gitgutter'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
@@ -97,7 +100,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ ]
 "  Set the updatetime to be lower to trigger coc faster
-set updatetime=300
+set updatetime=200
 
 " Use K to trigger tool tip documentation
 nnoremap <silent> K :call CocAction('doHover')<CR>
@@ -125,7 +128,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Renamed"    : "R",
     \ "Unmerged"   : "═",
     \ "Deleted"    : "D",
-    \ "Dirty"      : "·",
+    \ "Dirty"      : "*",
     \ "Clean"      : "✔︎",
     \ "Ignored"    : "I",
     \ "Unknown"    : "?"
@@ -133,6 +136,13 @@ let g:NERDTreeIndicatorMapCustom = {
 
 " Config for dev icons plugin
 set encoding=UTF-8
+
+" Config for vim git gutter plugin
+" Do not let git gutter setup any key mapping
+let g:gitgutter_map_keys = 0
+
+" Set sign column to always appear
+set signcolumn=yes
 
 " -----------------------------------------------------------------------
 " THEME SECTION

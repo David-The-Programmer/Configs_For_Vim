@@ -75,6 +75,9 @@ Plug 'ryanoasis/vim-devicons'
 " Plugin for git gutter
 Plug 'airblade/vim-gitgutter'
 
+" Plugin for vim-airline
+Plug 'vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
@@ -143,6 +146,16 @@ let g:gitgutter_map_keys = 0
 
 " Set sign column to always appear
 set signcolumn=yes
+
+" Config for the vim airline plugin
+" Config for how file paths are displayed on tabs
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" OceanicNext theme for vim airline plugin
+let g:airline_theme = 'oceanicnext'
+
+" No need to show current mode
+set noshowmode
 
 " -----------------------------------------------------------------------
 " THEME SECTION

@@ -61,6 +61,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do':  { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Plugin for displaying file system explorer
+Plug 'preservim/nerdtree'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.
@@ -97,6 +100,13 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Use [`g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" Config for NERDTree Plugin
+" Get NERDTree to show dot files
+let NERDTreeShowHidden=1
+
+" Open NERDTree automatically when vim starts
+autocmd vimenter * NERDTree
 
 " -----------------------------------------------------------------------
 " THEME SECTION

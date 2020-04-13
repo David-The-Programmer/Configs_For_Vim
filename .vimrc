@@ -56,6 +56,11 @@ Plug 'vim-scripts/ReplaceWithRegister'
 " NOTE! Plugin only really works with vim 8.2 and above
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plugin for fzf (fuzzy finder) in vim 
+" Remember to git clone fzf and install as stated on README
+Plug 'junegunn/fzf', { 'do':  { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

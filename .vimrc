@@ -144,6 +144,24 @@ map <silent> <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '⮞'
 let g:NERDTreeDirArrowCollapsible = '⮟'
 
+" Config to highlight current file opened in NERDTree
+" Check if NERDTree is open or active
+function! IsNerdTreeOpen()
+    return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind if NERDTree is active, current window contains a
+" modifiable file, and we are not in vimdiff
+function! SyncTree()
+    if &modifiable && IsNerdTreeOpen() && strlen(expand('%')) > 0 && !&diff
+        NERDTreeFind
+        wincmd w
+    endif
+endfunction
+
+" Hightlight current open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
+
 " Config for NERDTree Git Plugin
 " Config for custom symbols
 let g:NERDTreeIndicatorMapCustom = {

@@ -14,6 +14,14 @@ set showmatch
 
 " Highlight when searching
 set incsearch
+set hlsearch
+
+" Remove highlight searches
+nnoremap <silent> <esc> :nohlsearch<CR>
+
+" Remap for shifting between tabs
+nnoremap Q gT
+nnoremap W gt
 
 " -----------------------------------------------------------------------
 " PLUGINS SECTION
@@ -118,12 +126,19 @@ inoremap <silent><expr> <c-space> coc#refresh()
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
+" Config for FZF plugin
+" Remap for :Files command to be ctrl f
+nnoremap <silent> <C-f> :Files<CR>
+
 " Config for NERDTree Plugin
 " Get NERDTree to show dot files
 let NERDTreeShowHidden=1
 
 " Open NERDTree automatically when vim starts
 autocmd vimenter * NERDTree
+
+" Key binding to open/close NERDTree
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " Config for NERDTree Git Plugin
 " Config for custom symbols
@@ -159,6 +174,9 @@ let g:airline_powerline_fonts = 1
 
 " OceanicNext theme for vim airline plugin
 let g:airline_theme = 'oceanicnext'
+
+" Show number of matches of search
+set shortmess-=S
 
 " No need to show current mode
 set noshowmode

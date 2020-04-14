@@ -78,6 +78,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plugin for syntax highlighting
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+" Plugin for commenting with ctrl /
+Plug 'preservim/nerdcommenter'
+
 " Plugin for git gutter
 Plug 'airblade/vim-gitgutter'
 
@@ -171,7 +174,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Renamed"    : "R",
     \ "Unmerged"   : "═",
     \ "Deleted"    : "D",
-    \ "Dirty"      : "*",
+    \ "Dirty"      : "●",
     \ "Clean"      : "✔︎",
     \ "Ignored"    : "I",
     \ "Unknown"    : "?"
@@ -179,6 +182,12 @@ let g:NERDTreeIndicatorMapCustom = {
 
 " Config for dev icons plugin
 set encoding=UTF-8
+
+" Config for NERD Commenter plugin
+filetype plugin on
+" Invoke comments by pressing ctrl /
+vmap <C-_> <plug>NERDCommenterToggle
+nmap <C-_> <plug>NERDCommenterToggle
 
 " Config for vim git gutter plugin
 " Do not let git gutter setup any key mapping

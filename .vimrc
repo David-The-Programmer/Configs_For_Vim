@@ -140,6 +140,10 @@ autocmd vimenter * NERDTree
 " Key binding to open/close NERDTree
 map <silent> <C-n> :NERDTreeToggle<CR>
 
+" Config NERDTree arrows
+let g:NERDTreeDirArrowExpandable = '⮞'
+let g:NERDTreeDirArrowCollapsible = '⮟'
+
 " Config for NERDTree Git Plugin
 " Config for custom symbols
 let g:NERDTreeIndicatorMapCustom = {

@@ -185,9 +185,16 @@ set encoding=UTF-8
 
 " Config for NERD Commenter plugin
 filetype plugin on
+
 " Invoke comments by pressing ctrl /
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
 
 " Config for vim git gutter plugin
 " Do not let git gutter setup any key mapping

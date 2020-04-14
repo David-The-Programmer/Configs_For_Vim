@@ -23,6 +23,20 @@ nnoremap <silent> <esc> :nohlsearch<CR>
 nnoremap Q gT
 nnoremap W gt
 
+" Sets cursor styles
+" Block in normal, line in insert, underline in replace
+let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
+let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
+let &t_EI = "\<esc>[1 q"  " default cursor (usually blinking block) otherwise
+
+"Cursor settings:
+" 1 -> blinking block
+" 2 -> solid block 
+" 3 -> blinking underscore
+" 4 -> solid underscore
+" 5 -> blinking vertical bar
+" 6 -> solid vertical bar
+
 " -----------------------------------------------------------------------
 " PLUGINS SECTION
 " Install and run vim-plug on first run

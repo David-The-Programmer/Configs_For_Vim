@@ -166,14 +166,20 @@ let g:gitgutter_map_keys = 0
 set signcolumn=yes
 
 " Config for the vim airline plugin
-" Config for how file paths are displayed on tabs
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 " Need this for airline status bar to display properly
 let g:airline_powerline_fonts = 1
 
 " OceanicNext theme for vim airline plugin
 let g:airline_theme = 'oceanicnext'
+
+" Show buffer details in tab line
+" Remember to delete buffers using :bd <filename>
+" to make sure that buffers of closed files do not appear
+" on the tab line
+let g:airline#extensions#tabline#enabled = 1
+
+" Config for how file paths are displayed on tabs
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Show number of matches of search
 set shortmess-=S

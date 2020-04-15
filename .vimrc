@@ -76,6 +76,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 
 " Plugin for Intellisense
 " NOTE! Plugin only really works with vim 8.2 and above
+" as well as nodejs 13 and above
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plugin for fzf (fuzzy finder) in vim 
@@ -131,7 +132,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ ]
 "  Set the updatetime to be lower to trigger coc faster
-set updatetime=200
+set updatetime=100
 
 " Use K to trigger tool tip documentation
 nnoremap <silent> K :call CocAction('doHover')<CR>
@@ -154,9 +155,6 @@ let NERDTreeShowHidden=1
 " Open NERDTree automatically when vim starts
 autocmd vimenter * NERDTree
 
-" Key binding to open/close NERDTree
-map <silent> <C-n> :NERDTreeToggle<CR>
-
 " Config NERDTree arrows
 let g:NERDTreeDirArrowExpandable = '⮞'
 let g:NERDTreeDirArrowCollapsible = '⮟'
@@ -178,6 +176,14 @@ endfunction
 
 " Hightlight current open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
+
+" Key binding to open/close NERDTree
+function! ToggleNerdTree()
+    set eventignore=BufEnter
+    NERDTreeToggle
+    set eventignore=
+endfunction
+map <silent> <C-n> :call ToggleNerdTree()<CR>
 
 " Config for NERDTree Git Plugin
 " Config for custom symbols
@@ -238,6 +244,9 @@ set shortmess-=S
 
 " No need to show current mode
 set noshowmode
+
+" Enable coc integration with airline
+let g:airline#extensions#coc#enabled = 1
 
 " -----------------------------------------------------------------------
 " THEME SECTION

@@ -230,11 +230,23 @@ let g:airline_powerline_fonts = 1
 " OceanicNext theme for vim airline plugin
 let g:airline_theme = 'oceanicnext'
 
-" Show buffer details in tab line
-" Remember to delete buffers using :bd <filename>
-" to make sure that buffers of closed files do not appear
-" on the tab line
+" Show tab details in tab line
 let g:airline#extensions#tabline#enabled = 1
+
+" Do not show buffers
+let g:airline#extensions#tabline#show_buffers = 0
+
+" Show tabs instead of buffers
+let g:airline#extensions#tabline#show_tabs = 1
+
+" Stop displaying tab number
+let g:airline#extensions#tabline#show_tab_nr = 0
+
+" Prevents tab from displaying on the right
+let g:airline#extensions#tabline#show_splits = 0
+
+" Stop displaying the close button
+let g:airline#extensions#tabline#show_close_button = 0
 
 " Config for how file paths are displayed on tabs
 let g:airline#extensions#tabline#formatter = 'unique_tail'

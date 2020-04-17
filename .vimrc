@@ -56,8 +56,8 @@ call plug#begin('~/.vim/plugged')
 " Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-plug'
 
-" Get the oceanic next theme
-Plug 'mhartington/oceanic-next'
+" Get the vim code dark theme
+Plug 'tomasiser/vim-code-dark'
 
 " Plugin for JS Syntax
 Plug 'pangloss/vim-javascript'
@@ -89,9 +89,6 @@ Plug 'preservim/nerdtree'
 
 " Plugin to show git status flags in NERDTree file explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
-" Plugin for syntax highlighting
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Plugin for commenting with ctrl /
 Plug 'preservim/nerdcommenter'
@@ -228,7 +225,7 @@ set signcolumn=yes
 let g:airline_powerline_fonts = 1
 
 " OceanicNext theme for vim airline plugin
-let g:airline_theme = 'oceanicnext'
+let g:airline_theme = 'codedark'
 
 " Show tab details in tab line
 let g:airline#extensions#tabline#enabled = 1
@@ -268,6 +265,6 @@ if (has("termguicolors"))
 	set termguicolors
 endif
 
-colorscheme OceanicNext
+colorscheme codedark
 " -----------------------------------------------------------------------
 

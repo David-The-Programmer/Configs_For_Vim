@@ -12,6 +12,7 @@
     "prettier.trailingComma": "es5",
     "prettier.arrowParens": "always",
     "prettier.ignorePath": ".prettierignore, .gitignore",
+    "emmet.includeLanguages": {"vue-html": "html", "javascript": "javascriptreact"},
     "coc.preferences.formatOnSaveFiletypes":[
             "javascript",
             "javascriptreact",

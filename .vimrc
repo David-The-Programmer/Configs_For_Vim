@@ -65,9 +65,6 @@ Plug 'pangloss/vim-javascript'
 " Plugin for JSON Syntax
 Plug 'elzr/vim-json'
 
-" Plugin for emmet abreviations
-Plug 'mattn/emmet-vim'
-
 " Plugin for vim surround
 Plug 'tpope/vim-surround'
 
@@ -124,6 +121,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-json', 
   \ 'coc-html', 
+  \ 'coc-emmet',
   \ 'coc-css', 
   \ 'coc-eslint', 
   \ 'coc-prettier', 

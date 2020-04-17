@@ -110,10 +110,6 @@ call plug#end()
 " Disable conceal to stop weird behaviour when navigating in a json
 let g:vim_json_syntax_conceal = 0
 
-" Config for emmet-vim plugin
-" Remap the default <C-Y> emmet leader key to ,
-let g:user_emmet_leader_key=','
-
 " Config for coc plugin
 let g:coc_global_extensions = [
   \ 'coc-snippets',

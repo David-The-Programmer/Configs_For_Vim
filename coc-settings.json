@@ -13,6 +13,10 @@
     "prettier.arrowParens": "always",
     "prettier.ignorePath": ".prettierignore, .gitignore",
     "emmet.includeLanguages": {"vue-html": "html", "javascript": "javascriptreact"},
+    "emmet.excludeLanguages": [
+        "markdown",
+        "javascript"
+    ],
     "coc.preferences.formatOnSaveFiletypes":[
             "javascript",
             "javascriptreact",

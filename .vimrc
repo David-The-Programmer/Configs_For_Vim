@@ -115,6 +115,10 @@ Plug 'vim-airline/vim-airline'
 " Make sure nerd font is installed
 Plug 'ryanoasis/vim-devicons'
 
+" Plugin for live server for html, js and css (frontend)
+" Follow installation instructions on https://github.com/turbio/bracey.vim
+Plug 'turbio/bracey.vim'
+
 " Initialize plugin system
 call plug#end()
 " After that, Reload .vimrc and :PlugInstall to install plugins.

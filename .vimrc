@@ -46,6 +46,9 @@ else
     let &t_EI = "\<esc>[1 q"  " default cursor (usually blinking block) otherwise
 endif
 
+" Open new split panes to right and below
+set splitright
+set splitbelow
 
 " -----------------------------------------------------------------------
 " PLUGINS SECTION

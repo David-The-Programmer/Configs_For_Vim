@@ -25,17 +25,27 @@ nnoremap W gt
 
 " Sets cursor styles
 " Block in normal, line in insert, underline in replace
-let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
-let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
-let &t_EI = "\<esc>[1 q"  " default cursor (usually blinking block) otherwise
+" Cursor should blink regardless of mode
+" If using neovim, then use guicursor to set cursor styles
+if has('nvim')
+    set guicursor=n-v-c:block-Cursor
+    set guicursor+=n-v-c:blinkon10
+    set guicursor+=i:ver25-iCursor-blinkon10
+    set guicursor+=r:hor20-iCursor-blinkon10
+else
+    " If using vim, then use these cursor settings
+    "Cursor settings: (works for vim only, not neovim)
+    " 1 -> blinking block
+    " 2 -> solid block 
+    " 3 -> blinking underscore
+    " 4 -> solid underscore
+    " 5 -> blinking vertical bar
+    " 6 -> solid vertical bar
+    let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
+    let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
+    let &t_EI = "\<esc>[1 q"  " default cursor (usually blinking block) otherwise
+endif
 
-"Cursor settings:
-" 1 -> blinking block
-" 2 -> solid block 
-" 3 -> blinking underscore
-" 4 -> solid underscore
-" 5 -> blinking vertical bar
-" 6 -> solid vertical bar
 
 " -----------------------------------------------------------------------
 " PLUGINS SECTION
@@ -73,6 +83,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 
 " Plugin for Intellisense
 " NOTE! Plugin only really works with vim 8.2 and above
+" or neovim 0.4 and above
 " as well as nodejs 13 and above
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

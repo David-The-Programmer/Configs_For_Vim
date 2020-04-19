@@ -269,6 +269,19 @@ set noshowmode
 " Enable coc integration with airline
 let g:airline#extensions#coc#enabled = 1
 
+" Configs for bracey plugin (live server)
+" Refresh server only on save
+let g:bracey_refresh_on_save = 1
+
+" Set the port to be 5500 to have consistent port number
+let g:bracey_server_port = 5500
+
+" Set Alt-o to start server
+nnoremap <silent> <A-o> :Bracey<CR>
+
+" Set Alt-s to stop server
+nnoremap <silent> <A-s> :BraceyStop<CR>
+
 " -----------------------------------------------------------------------
 " THEME SECTION
 syntax enable

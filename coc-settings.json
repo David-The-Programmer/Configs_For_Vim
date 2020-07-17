@@ -6,7 +6,6 @@
             "typescriptreact"
         ],
     "eslint.packageManager":"npm",
-    "eslint.nodePath":"/home/davhz/.nvm/versions/node/v13.13.0/lib/node_modules",
     "eslint.options": {"configFile": "/home/davhz/.eslintrc.json"},
         "prettier.tabWidth": 4,
     "prettier.trailingComma": "es5",
@@ -23,7 +22,6 @@
             "typescript",
             "typescriptreact"
         ],
-    "tsserver.npm": "/home/davhz/.nvm/versions/node/v13.13.0/bin/npm",
     "tsserver.formatOnType": true,
     "coc.preferences.formatOnType": true
 }

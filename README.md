@@ -39,6 +39,16 @@ Below are the steps to make the configurations work in vim/neovim
 4. Everything should be working when using neovim for any general JS development
 
 ### How to configure
+Configuration of the different files require different documentation online (I can't remember exactly how to config each file :))
 
+Link to configure coc:
+https://github.com/neoclide/coc.nvim/wiki
+
+Link to configure eslintrc:
+https://eslint.org/docs/user-guide/configuring
 
 ### Future plans
+- [ ] Give description of setup dependencies requirements, e.g Node.js, Python3, etc
+- [ ] Make the instructions more clear and detailed
+- [ ] Reorganise the setup files with a clearer and more robust structure
+- [ ] Make the setup into an automated process of just installing a package

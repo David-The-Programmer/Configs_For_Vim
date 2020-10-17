@@ -196,7 +196,7 @@ map <silent> <C-n> :call ToggleNerdTree()<CR>
 
 " Config for NERDTree Git Plugin
 " Config for custom symbols
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"   : "M",
     \ "Staged"     : "S",
     \ "Untracked"  : "U",

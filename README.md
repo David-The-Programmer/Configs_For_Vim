@@ -39,4 +39,4 @@ Below are the steps to make the configurations work in vim/neovim
 
 - [ ] Make the instructions more clear and detailed
 - [ ] Reorganise the setup files with a clearer and more robust structure
-- [ ] Make the setup into an automated process of just installing a package
+- [ ] Make the setup into an automated process of just running a script

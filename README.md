@@ -27,6 +27,19 @@ The goal is not to have a full blown IDE/text editor with all the bells and whis
 
 Note: Currently now, neovim is the default vim-based editor used
 
+There are two ways to setup the vim configurations, the automated way using **setup.sh** or manually.
+
+#### Automated setup
+
+Just run the setup.sh shell script in your terminal using the command below.
+Make sure that you are in the root directory of this repository before doing so.
+
+```sh
+./setup.sh
+```
+
+#### Manual setup
+
 Below are the steps to make the configurations work in vim/neovim
 
 1. Copy and paste **.vimrc** in the home directory.
@@ -39,4 +52,4 @@ Below are the steps to make the configurations work in vim/neovim
 
 - [ ] Make the instructions more clear and detailed
 - [ ] Reorganise the setup files with a clearer and more robust structure
-- [ ] Make the setup into an automated process of just running a script
+- [x] Make the setup into an automated process of just running a script
